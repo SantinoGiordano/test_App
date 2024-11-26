@@ -13,8 +13,10 @@ export default function Home() {
           <Maincard/>
       </div>
 
-        <div className="bg-slate-200">
+        <div className="bg-gray-800">
+          <div className="p-5">
           <EventCard/>
+          </div>
         </div>
       </div>
 
