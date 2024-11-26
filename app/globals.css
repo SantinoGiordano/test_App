@@ -23,6 +23,17 @@ body {
 
 @layer utilities {
 
+  .eventCard{
+    @apply p-5 m-4 bg-stone-400
+  }
+  /* .eventCard-title{
+    @apply
+  }
+  .eventCard-text{
+    @apply
+  }
+   */
+
   /* .textarea{
     @apply p-5 font-cutouts
   } */
