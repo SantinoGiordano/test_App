@@ -5,9 +5,9 @@ const EventCard = () => {
     <>
     <div className='eventCard'>
       <div className='eventCard-title'>
-        Title: Party
+        Title: Concert
       </div>
-      <div>
+      <div className='eventCard-text'>
       Join us for an unforgettable night of music and energy at Harmony Live 2024! 
       Featuring chart-topping artists and local talents, 
       this concert promises an electrifying atmosphere with stunning light shows, 

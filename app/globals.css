@@ -24,15 +24,15 @@ body {
 @layer utilities {
 
   .eventCard{
-    @apply p-5 m-4 bg-stone-400
+    @apply max-w-[50%] p-5 bg-stone-200 rounded-lg drop-shadow-lg 
   }
-  /* .eventCard-title{
-    @apply
+ .eventCard-title{
+    @apply font-semibold p-2 text-3xl
   }
+ 
   .eventCard-text{
-    @apply
+    @apply text-justify p-5 bg-white rounded-lg drop-shadow-lg
   }
-   */
 
   /* .textarea{
     @apply p-5 font-cutouts
