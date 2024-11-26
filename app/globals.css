@@ -17,11 +17,9 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  
 }
-header{
-  /* font-family: var(--font-cutouts); */
-  /* font-family: var(--font-geist-mono); */
-}
+
 
 @layer utilities {
 

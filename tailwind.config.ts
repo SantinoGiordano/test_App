@@ -14,6 +14,9 @@ export default {
       },
       fontFamily:{
         cutouts: 'var(--font-cutouts)',
+      },
+      backgroundImage: {
+        'rave-bg': "url('/landmark.jpg')"
       }
     },
   },
