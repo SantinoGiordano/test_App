@@ -34,6 +34,9 @@ body {
     @apply text-justify p-5 bg-white rounded-lg drop-shadow-lg
   }
 
+  .image-responsive{
+    @apply w-full h-32 sm:h-40 md:h-56 lg:h-96 object-cover
+  }
   /* .textarea{
     @apply p-5 font-cutouts
   } */
