@@ -1,0 +1,25 @@
+ 
+//  above the return
+ 
+ // const [isVisible, setIsVisible] = useState(false);
+
+  // const handleClick = () => {
+  //   setIsVisible(true);
+
+  //   // Hide the toast after 3 seconds
+  //   setTimeout(() => {
+  //     setIsVisible(false);
+  //   }, 3000);
+  // };
+
+
+// in the rturn
+
+
+       {/* {isVisible && (
+              <div className="toast">
+                <div className="p-5 bg-lime-600 fixed-bottom rounded-lg ">
+                  <span>Success</span>
+                </div>
+              </div>
+            )} */}
