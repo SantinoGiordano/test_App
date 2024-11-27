@@ -17,7 +17,7 @@ export default {
       },
       backgroundImage: {
         'rave-bg': "url('/festival.jpg')"
-      }
+      },
     },
   },
   plugins: [],
