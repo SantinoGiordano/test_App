@@ -14,11 +14,13 @@ export default {
       },
       fontFamily:{
         cutouts: 'var(--font-cutouts)',
+        printClearly: 'var(--font-printClearly)'
       },
       backgroundImage: {
         'rave-bg': "url('/festival.jpg')",
-        'background-image': "url('/resturaunt.jpg')",
+        'background-image-about': "url('/resturaunt.jpg')",
         'background-image-home': "url('/festival.jpg')",
+        'background-image-event': "url('/items.jpg')",
 
       },
     },
