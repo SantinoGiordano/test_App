@@ -18,6 +18,8 @@ export default {
       backgroundImage: {
         'rave-bg': "url('/festival.jpg')",
         'background-image': "url('/resturaunt.jpg')",
+        'background-image-home': "url('/festival.jpg')",
+
       },
     },
   },
