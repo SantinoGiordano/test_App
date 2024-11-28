@@ -1,14 +1,15 @@
-// 'use client'
+'use client'
 import React, { useState } from "react";
+import CheckoutList from "./CheckoutList";
 
-interface event{
-  id:number,
-  title:string,
-  info:string,
-  
+interface event {
+  id: number;
+  title: string;
+  info: string;
 }
 
 const EventCard = () => {
+
   const eventData = [
     {
       id: 1,
@@ -61,28 +62,34 @@ const EventCard = () => {
       info: "Discuss this month's book and connect with fellow readers at Café Literati. Share insights, enjoy a cozy atmosphere, and find your next read. Stay for trivia games and win exciting bookish prizes.",
     },
   ];
-  // const [isVisible, setIsVisible] = useState(false);
+  
+  const [checkoutItems, setCheckoutItems] = useState<string[]>([]);
 
-  // const handleClick = () => {
-  //   setIsVisible(true);
+  function handleAdd(title: string) {
+    setCheckoutItems((prevItems) => [...prevItems, title]);
+  }
 
-  //   // Hide the toast after 3 seconds
-  //   setTimeout(() => {
-  //     setIsVisible(false);
-  //   }, 3000);
-  // };
+  function handleRemove(title: string) {
+    setCheckoutItems((prevItems) =>
+      prevItems.filter((item) => item !== title)
+    );
+  }
 
   return (
     <>
-      {eventData.map((eventData) => (
-      <div key={eventData.id} className="flex space-x-4 p-5 max-w-7xl align-center">
-        <><div className="eventCard">
-          <div className="eventCard-title">Title: {eventData.title}</div>
-          <div className="eventCard-text">
-          {eventData.info}
+      <CheckoutList items={checkoutItems} />
+      {eventData.map((event) => (
+        <div
+          key={event.id}
+          className="flex space-x-4 p-5 max-w-7xl align-center"
+        >
+          <div className="eventCard">
+            <div className="eventCard-title">Title: {event.title}</div>
+            <div className="eventCard-text">{event.info}</div>
           </div>
-        </div><div className="flex flex-col space-y-2 ">
+          <div className="flex flex-col space-y-2">
             <button
+              onClick={() => handleAdd(event.title)}
               className="p-4 pl-10 pr-10 text-white bg-green-600 rounded-lg hover:bg-green-300 hover:text-black max-h-14"
               style={{ boxShadow: "inset 3px 3px 3px rgba(0, 0, 0, 0.3)" }}
             >
@@ -90,24 +97,18 @@ const EventCard = () => {
             </button>
 
             <button
-              className=" p-4 pl-10 pr-10 text-white bg-red-600 rounded-lg hover:bg-red-300 hover:text-black max-h-14"
+              onClick={() => handleRemove(event.title)}
+              className="p-4 pl-10 pr-10 text-white bg-red-600 rounded-lg hover:bg-red-300 hover:text-black max-h-14"
               style={{ boxShadow: "inset 3px 3px 3px rgba(0, 0, 0, 0.3)" }}
             >
               Delete
             </button>
-
-          </div></>
-      </div>
-        ))}
-      {/* {isVisible && (
-              <div className="toast">
-                <div className="p-5 bg-lime-600 fixed-bottom rounded-lg ">
-                  <span>Success</span>
-                </div>
-              </div>
-            )} */}
+          </div>
+        </div>
+      ))}
     </>
   );
 };
+
 
 export default EventCard;
