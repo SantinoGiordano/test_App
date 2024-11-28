@@ -12,8 +12,8 @@ const Nav = () => {
         <Link className="p-5 " href={"./events"}>
           Events
         </Link>
-        <Link className="p-5" href={"./sale"}>
-          Sales
+        <Link className="p-5" href={"./about"}>
+          About
         </Link>
         <Link className="p-5" href={"./contact"}>
           Contact
