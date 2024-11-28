@@ -16,7 +16,8 @@ export default {
         cutouts: 'var(--font-cutouts)',
       },
       backgroundImage: {
-        'rave-bg': "url('/festival.jpg')"
+        'rave-bg': "url('/festival.jpg')",
+        'background-image': "url('/resturaunt.jpg')",
       },
     },
   },
