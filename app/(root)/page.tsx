@@ -1,9 +1,12 @@
+;
 import EventCard from "../componets/EventCard";
 import Maincard from "../componets/Maincard";
+import AlertPage from "../componets/AlertPage";
 
 export default function Home() {
   return (
     <>
+    {/* <AlertPage/> */}
       <div>
         <div className="h-screen bg-fixed bg-center bg-cover bg-background-image-home">
           <div className="h-full bg-black/50 flex items-center justify-center">
